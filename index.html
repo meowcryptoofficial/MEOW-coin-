@@ -20,8 +20,11 @@
       <ul class="nav-links">
         <li><a href="#stats">Statistics</a></li>
         <li><a href="#listing">Listing</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
         <li><a href="#staking">Staking</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#proof">Proof</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#buy" class="btn-buy">Buy Now</a></li>
       </ul>
     </div>
@@ -32,9 +35,7 @@
     <div class="container">
       <img src="images/meow-logo.png" alt="MEOW Logo" class="hero-logo" />
       <h1 class="hero-title">🐱 MEOW Chain</h1>
-      <p class="hero-sub">
-        The revolution is brewing. Cats are taking back the internet.
-      </p>
+      <p class="hero-sub">The revolution is brewing. Cats are taking back the internet.</p>
 
       <div class="hero-price">
         <span class="price-value" id="livePrice">$0.0004198</span>
@@ -101,15 +102,15 @@
         <div class="listing-card">
           <h3>Presale</h3>
           <p class="listing-status done">✅ Completed</p>
-          <p><strong>Start:</strong> November 10, 2025</p>
-          <p><strong>End:</strong> November 30, 2025</p>
+          <p><strong>Start:</strong> September 1, 2026</p>
+          <p><strong>End:</strong> September 30, 2026</p>
           <p><strong>Price:</strong> $0.0001</p>
         </div>
 
         <div class="listing-card">
-          <h3>Listing</h3>
-          <p class="listing-status active">🔥 Live Now</p>
-          <p><strong>Date:</strong> December 15, 2025</p>
+          <h3>Official Listing</h3>
+          <p class="listing-status active">🔥 Coming Soon</p>
+          <p><strong>Date:</strong> <span style="color: #fbbf24; font-weight: 800;">October 7, 2026</span></p>
           <p><strong>Exchange:</strong> PancakeSwap</p>
           <p><strong>Listing Price:</strong> $0.00035</p>
         </div>
@@ -128,8 +129,60 @@
     </div>
   </section>
 
+  <!-- ===== TOKENOMICS PIE CHART ===== -->
+  <section id="tokenomics" class="section">
+    <div class="container">
+      <h2 class="section-title">🥧 <span class="grad">Tokenomics</span></h2>
+      <p class="section-sub">Total Supply: 10.1B MEOW</p>
+
+      <div class="tokenomics-wrapper">
+        <div class="pie-chart-container">
+          <div class="pie-chart" id="pieChart"></div>
+        </div>
+
+        <div class="tokenomics-legend">
+          <div class="legend-item">
+            <div class="legend-color" style="background: #f59e0b;"></div>
+            <div class="legend-text">
+              <span class="legend-label">Liquidity Pool</span>
+              <span class="legend-value">40%</span>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #fbbf24;"></div>
+            <div class="legend-text">
+              <span class="legend-label">Staking Rewards</span>
+              <span class="legend-value">20%</span>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #fcd34d;"></div>
+            <div class="legend-text">
+              <span class="legend-label">Marketing</span>
+              <span class="legend-value">15%</span>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #fde68a;"></div>
+            <div class="legend-text">
+              <span class="legend-label">Community & Airdrop</span>
+              <span class="legend-value">15%</span>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #fef3c7;"></div>
+            <div class="legend-text">
+              <span class="legend-label">Team (Vested 2 Years)</span>
+              <span class="legend-value">10%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== STAKING ===== -->
-  <section id="staking" class="section">
+  <section id="staking" class="section section-alt">
     <div class="container">
       <h2 class="section-title">💰 <span class="grad">Staking</span> Information</h2>
       <div class="staking-grid">
@@ -170,6 +223,94 @@
         </label>
         <button onclick="calcReward()" class="btn-primary">Calculate</button>
         <p class="calc-result" id="calcResult"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROADMAP ===== -->
+  <section id="roadmap" class="section">
+    <div class="container">
+      <h2 class="section-title">🗺️ <span class="grad">Roadmap</span></h2>
+      <p class="section-sub">Our journey to the moon and beyond</p>
+
+      <div class="roadmap-timeline">
+
+        <div class="roadmap-item done">
+          <div class="roadmap-marker">✅</div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 1 — Q3 2026</span>
+            <h3>Foundation</h3>
+            <ul>
+              <li>Smart Contract Development</li>
+              <li>Website Launch</li>
+              <li>Whitepaper Release</li>
+              <li>Community Building (Telegram, Twitter)</li>
+            </ul>
+            <span class="roadmap-status">Completed</span>
+          </div>
+        </div>
+
+        <div class="roadmap-item done">
+          <div class="roadmap-marker">✅</div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 2 — Q3 2026</span>
+            <h3>Presale & Audit</h3>
+            <ul>
+              <li>Presale Launch</li>
+              <li>Smart Contract Audit (CertiK)</li>
+              <li>Liquidity Lock (2 Years)</li>
+              <li>CoinMarketCap Listing</li>
+            </ul>
+            <span class="roadmap-status">Completed</span>
+          </div>
+        </div>
+
+        <div class="roadmap-item active">
+          <div class="roadmap-marker">🔥</div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 3 — Q4 2026</span>
+            <h3>Listing & Growth</h3>
+            <ul>
+              <li><strong>Official Listing — October 7, 2026</strong></li>
+              <li>PancakeSwap DEX Listing</li>
+              <li>CoinGecko Listing</li>
+              <li>Marketing Campaign & Influencers</li>
+              <li>Holder Airdrop Round 1</li>
+            </ul>
+            <span class="roadmap-status">In Progress</span>
+          </div>
+        </div>
+
+        <div class="roadmap-item upcoming">
+          <div class="roadmap-marker">⏳</div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 4 — Q1 2027</span>
+            <h3>Expansion</h3>
+            <ul>
+              <li>Centralized Exchange (CEX) Listings</li>
+              <li>Staking Platform Launch</li>
+              <li>NFT Collection</li>
+              <li>Cross-chain Bridge</li>
+            </ul>
+            <span class="roadmap-status">Upcoming</span>
+          </div>
+        </div>
+
+        <div class="roadmap-item upcoming">
+          <div class="roadmap-marker">🚀</div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 5 — Q2 2027</span>
+            <h3>Metaverse & DAO</h3>
+            <ul>
+              <li>MEOW Metaverse</li>
+              <li>Play-to-Earn Game</li>
+              <li>DAO Governance</li>
+              <li>Global Expansion</li>
+            </ul>
+            <span class="roadmap-status">Planned</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -242,8 +383,120 @@
     </div>
   </section>
 
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title">❓ <span class="grad">FAQ</span></h2>
+      <p class="section-sub">Frequently Asked Questions</p>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is MEOW Chain?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>MEOW Chain is a community-driven memecoin built on BNB Chain. It aims to reclaim the internet for cats, offering staking rewards, deflationary tokenomics, and a passionate global community.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>When will MEOW be listed?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Official listing is scheduled for <strong>October 7, 2026</strong> on PancakeSwap (DEX). Centralized exchange (CEX) listings will follow in Phase 4 (Q1 2027).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How can I buy MEOW tokens?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You need a crypto wallet (MetaMask or Trust Wallet), some BNB for gas fees, and access to PancakeSwap. Paste the MEOW contract address, swap BNB for MEOW, and you're done!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is the total supply of MEOW?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Total supply is 10.1 billion (10,100,000,000) MEOW tokens. Max supply is capped — no new tokens will ever be minted.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is the liquidity locked?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! Liquidity is locked for 2 years on Unicrypt. This ensures rug-pull protection and long-term stability for all holders.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Has the smart contract been audited?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, the smart contract has been audited by CertiK and SolidProof. Audit reports are publicly available and verifiable on-chain.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is the staking APY?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Current staking APY is 85% with a 180-day lock period. Early withdrawals are subject to a penalty. Rewards are distributed automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is MEOW Chain safe from rug pulls?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Ownership has been renounced, liquidity is locked for 2 years, and the contract is audited. No developer can alter or drain the contract. Always do your own research (DYOR).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Where can I follow MEOW Chain updates?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Follow us on Twitter, join our Telegram community, and stay connected on Discord. All official links are in the footer below.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is MEOW Chain a good investment?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>This is not financial advice. Crypto investments carry high risk. Always do your own research (DYOR) and never invest more than you can afford to lose.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ===== HOW TO BUY ===== -->
-  <section id="buy" class="section">
+  <section id="buy" class="section section-alt">
     <div class="container">
       <h2 class="section-title">🛒 How to Buy <span class="grad">MEOW</span></h2>
       <div class="buy-grid">
