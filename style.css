@@ -706,3 +706,35 @@ body {
   .notice-icon { font-size: 16px; }
   .notice-close { width: 24px; height: 24px; font-size: 12px; }
 }
+
+/* ============================================
+   IN PROGRESS SPINNER
+   ============================================ */
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.listing-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(245, 158, 11, 0.25);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
