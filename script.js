@@ -62,11 +62,11 @@ async function fetchLivePrice() {
   try {
     // Demo data (used until live API is connected)
     const d = {
-      price: 0.0004198,
-      change24h: 2.21,
-      marketCap: 617040,
-      fdv: 4240000,
-      volume24h: 0,
+      price: 0.0004898,
+      change24h: 16.67,
+      marketCap: 719930,
+      fdv: 4950000,
+      volume24h: 11634,
       holders: 9630,
       liquidity: 42500,
     };
